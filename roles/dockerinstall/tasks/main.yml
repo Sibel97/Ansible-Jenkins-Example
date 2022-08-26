@@ -27,7 +27,7 @@
   apt:
     pkg:
       - docker-ce
-      - container.io
+      - containerd.io
     state: latest
     update_cache: true
 
