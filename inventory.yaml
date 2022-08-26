@@ -3,7 +3,7 @@ all:
   children:
     manager-group:
       hosts:
-        127.0.0.1:
+        manager:
     worker-group:
       hosts:
         worker:
