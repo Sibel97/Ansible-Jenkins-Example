@@ -4,5 +4,15 @@
   roles:
   - initialinstalls
   - pipinstalls
-  - copykey
   - dockerinstall
+
+
+- hosts: manager-group
+  become: true
+  roles:
+  - swarminit
+
+- hosts: worker-group
+  become: true
+  roles:
+  - swarmjoin
