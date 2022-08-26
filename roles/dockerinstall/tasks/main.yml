@@ -3,14 +3,14 @@
 - name: "Install required packages"
   apt:
     pkg:
-    - apt-transport-https
-    - ca-certificates
-    - curl
-    - software-properties-common
-    - python-pip
-    - python3-pip
-    - virtualenv
-    - python3-setuptools
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - software-properties-common
+      - python-pip
+      - python3-pip
+      - virtualenv
+      - python3-setuptools
   state: latest
   update_cache: true
 
@@ -26,13 +26,13 @@
 - name: "Install docker engine"
   apt:
     pkg:
-    - docker-ce
-    - container.io
+      - docker-ce
+      - container.io
     state: latest
     update_cache: true
 
 - name: "Docker pip installs"
   pip:
     name:
-    - docker
-    - jsondiff
+      - docker
+      - jsondiff
