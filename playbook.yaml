@@ -8,6 +8,7 @@
 
 
 - hosts: manager-group
+  connection: local
   become: true
   roles:
   - swarminit
