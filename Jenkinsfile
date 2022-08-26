@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Run Playbook'){
             steps{
-                sh 'ansible-playbook -i inventory.yaml playbook.yaml -e "ansible_become_password=ubuntu"'
+                sh 'ansible-playbook -i inventory.yaml playbook.yaml -e "ansible_become_password=jenkins"'
             }
         }
     }
